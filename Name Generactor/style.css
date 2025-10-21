@@ -1,0 +1,31 @@
+.haeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.input{
+    padding: 10px 8px 10px 8px;
+    width: 20rem;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

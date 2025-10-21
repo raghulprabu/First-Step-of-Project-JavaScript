@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Clicking task</title>
+</head>
+<body>
+    <div>
+
+        <h1 id="result">Name </h1>
+        <button onclick="update(event)"> Raghul</button>
+        <button onclick="update(event)"> front-end developer </button>
+        <button onclick="update(event)"> Apple </button>
+
+    </div>
+
+    <script>
+
+        let h1 = document.getElementById("result")
+
+        const update = (event) => {
+            h1.textContent=event.target.textContent
+
+        }
+
+
+    </script>
+</body>
+</html>

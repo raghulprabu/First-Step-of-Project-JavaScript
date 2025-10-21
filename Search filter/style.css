@@ -1,0 +1,36 @@
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+  padding: 10px 20px 10px 20px ;
+  border-radius: 10px;
+  width: 20rem;
+   border: 2px solid #ccc;
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.text:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+    border-color: #007bff; /* Change border color on hover */
+}
+
+
+.heading{
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.down{
+    color: hotpink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.output{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

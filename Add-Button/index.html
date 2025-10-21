@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Add text word </title>
+     <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <button onclick="update()">
+           click the button 
+        </button>
+
+        <div>
+            <div id="result"> </div>
+        </div>
+
+    </div>
+
+    <script>
+        let div= document.getElementById("result")
+
+        let update = () =>
+        {
+
+            //! Create new Element 
+            // it will <h1>  create an new element 
+            let listitem = document.createElement("h1")
+            listitem.textContent="hello Raghul"
+            div.append(listitem)
+        }
+
+    </script>
+
+<script  src="./main.js"></script>
+</body>
+</html>
