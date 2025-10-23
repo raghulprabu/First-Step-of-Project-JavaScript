@@ -1,46 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> change the color </title>
+    <title>Change the color</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        div {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #btn {
+            background-color: #76adf1;
+            color: rgb(12, 7, 7);
+        }
+
+        #btn:hover {
+            background-color: #ff5252;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        button:nth-of-type(2) {
+            background-color: #4ecdc4;
+            color: white;
+        }
+
+        button:nth-of-type(2):hover {
+            background-color: #45b7aa;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
+
 <body>
     <div>
-
         <button id="btn" onclick="update()">
-           change the color
+            Change the color
         </button>
-
         <button onclick="change()">
-        change full color
+            Change full color
         </button>
-
-
     </div>
 
-
     <script>
-
-        // select btn
         let btn = document.getElementById("btn")
-
-        let update = () =>{
-            btn.style.backgroundColor="red"
+        let update = () => {
+            btn.style.backgroundColor = "red"
         }
-
-
-        // hole body color changes
 
         let body = document.body
-
-        let change  = () =>
-        {
-            body.style.backgroundColor="lightblue"
+        let change = () => {
+            body.style.backgroundColor = "lightblue"
         }
+    </script>
 
 
 
-    </script>   
 </body>
+
 </html>
