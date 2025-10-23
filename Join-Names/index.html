@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Joiner</title>
+    <style>
+        .container {
+            /* Flexbox to center the content on the screen */
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9; /* Light background */
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column; /* Stack inputs and button vertically */
+            gap: 15px; /* Space between elements */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for "model style" */
+            background-color: #ffffff; /* White card background */
+            width: 90%;
+            max-width: 350px; /* Max width for the card */
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #007bff; /* Highlight on focus */
+            outline: none;
+        }
+
+        #joinbtn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff; /* Primary button color */
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #joinbtn:hover {
+            background-color: #0056b3;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 1.8em; /* Larger font for result */
+            color: #333;
+            text-align: center;
+            min-height: 1.5em; /* Reserve space */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="input-group">
+            <input type="text" placeholder="Enter first name" id="firstName">
+            <input type="text" placeholder="Enter second name" id="secondName">
+            <button id="joinbtn">Join Names</button>
+        </div>
+
+        <h1 id="result"></h1>
+
+    </div>
+
+    <script src="./main.js">
+    </script>
+
+</body>
+</html>
